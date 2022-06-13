@@ -34,7 +34,7 @@ describe('<App />', () => {
     const initialImg = img.props.src
     expect(initialImg).not.toBeFalsy()
 
-    const valuePromise = new Promise<string>((resolve) => {
+    const valuePromise = new Promise<string>(resolve => {
       callback.run = value => resolve(value)
     })
 
